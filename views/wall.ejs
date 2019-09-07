@@ -8,11 +8,99 @@
 </head>
 <body>
   <% include partials/nav.ejs %>
-  <div class="ad">
-    <p id="this-is-ad">إعلان</p>
-    <h2 id="add-size">1035x231</h2>
-  </div>
+  <section id="body">
+    <div class="ad">
+      <p id="this-is-ad">إعلان</p>
+      <h2 id="add-size">1035x231</h2>
+    </div>
+    <section id="container">
+      <section id="posts">
 
+      <div class="card">
+        <div class="card-header">
+          <div class="user">
+            <img class="user-pic" src="https://avatars0.githubusercontent.com/u/1?v=4" alt="pic">
+            <div class="user-info">
+              <h4 class="user-name" class="name">سمير الشاف</h4>
+              <p class="post-time">منذ 15 دقيقة</p>
+            </div>
+          </div>
+          <div class="post-other-options"> <p class="post-other-options-dots">...</p> </div>
+        </div>
+        <div class="post-details">
+          <p class="post-detail-text" class="post-text">بارتاجي هذا قاطو للحباب , قاطو تاع قعدات</p>
+          <img class="post-detail-pic" src="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.0-9/60339187_558796704527316_4178237356274352128_n.jpg?_nc_cat=111&_nc_oc=AQlbN8X_1Q90kWACbTzNkDPiu-qEIrg2lsViQcWwmQ-8bY6nDi9zmhVA876RYZK1e78&_nc_ht=scontent-mrs2-1.xx&oh=81a5b258e961202907f0275cc74ed63d&oe=5DC7D45B" alt="cake">
+        </div>
+        <div class="post-stats-container">
+          <div class="post-stats">
+            <div class="likes-comments">
+            <div class="post-likes">
+              <img class="stat-icons" src="resources/images/heart.png" alt="likes">
+              <p class="stats-count">32</p>
+            </div>
+            <div class="post-comments">
+              <img class="stat-icons" src="resources/images/comment1.png" alt="comments">
+              <p class="stats-count">10</p>
+            </div>
+            </div>
+            <div class="post-shares">
+              <img class="stat-icons" src="resources/images/share.png" alt="shares">
+              <p class="stats-count">14</p>
+            </div>
+          </div>
+          <form class="post-comments-box">
+            <input class="post-input" type="text" name="comment" placeholder="علق هنا.." required>
+            <button class="post-submit" type="button" name="button">علق</button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="user">
+            <img class="user-pic" src="https://avatars0.githubusercontent.com/u/1?v=4" alt="pic">
+            <div class="user-info">
+              <h4 class="user-name" class="name">سمير الشاف</h4>
+              <p class="post-time">منذ 15 دقيقة</p>
+            </div>
+          </div>
+          <div class="post-other-options"> <p class="post-other-options-dots">...</p> </div>
+        </div>
+        <div class="post-details">
+          <p class="post-detail-text" class="post-text">بارتاجي هذا قاطو للحباب , قاطو تاع قعدات</p>
+          <img class="post-detail-pic" src="https://scontent-mrs2-1.xx.fbcdn.net/v/t1.0-9/60339187_558796704527316_4178237356274352128_n.jpg?_nc_cat=111&_nc_oc=AQlbN8X_1Q90kWACbTzNkDPiu-qEIrg2lsViQcWwmQ-8bY6nDi9zmhVA876RYZK1e78&_nc_ht=scontent-mrs2-1.xx&oh=81a5b258e961202907f0275cc74ed63d&oe=5DC7D45B" alt="cake">
+        </div>
+        <div class="post-stats-container">
+          <div class="post-stats">
+            <div class="likes-comments">
+            <div class="post-likes">
+              <img class="stat-icons" src="resources/images/heart.png" alt="likes">
+              <p class="stats-count">32</p>
+            </div>
+            <div class="post-comments">
+              <img class="stat-icons" src="resources/images/comment1.png" alt="comments">
+              <p class="stats-count">10</p>
+            </div>
+            </div>
+            <div class="post-shares">
+              <img class="stat-icons" src="resources/images/share.png" alt="shares">
+              <p class="stats-count">14</p>
+            </div>
+          </div>
+          <form class="post-comments-box">
+            <input class="post-input" type="text" name="comment" placeholder="علق هنا.." required>
+            <button class="post-submit" type="button" name="button">علق</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+      <section id="ten-recipes-container">
+      <div id="ten-recipes">
+
+      </div>
+    </section>
+    </section>
+</section>
   <script src="resources/js/index.js" type="text/javascript"></script>
 </body>
 </html>
