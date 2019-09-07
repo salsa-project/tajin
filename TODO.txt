@@ -1,0 +1,17 @@
+--------------------------------------
+START WORKING ON TAJIN IN : 07/09/2019
+--------------------------------------
+
+[DONE][15min] -> Create NAVBAR dynamically to all pages
+[DONE][1hour] -> Style NAVBAR
+[DONE][30min] -> Highlight Active page in NAVBAR
+[DONE][75min] -> Create SIGNUP form to signup page and style it
+
+[][] -> Create FOOTER
+[][] -> Add FOOTER to partials
+[][] -> Create LOGIN form
+[][] -> Style LOGIN form
+[][] ->
+[][] ->
+[][] ->
+[][] ->

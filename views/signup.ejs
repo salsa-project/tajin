@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طاجين</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="resources/css/style.css">
+</head>
+<body>
+  <% include partials/nav.ejs %>
+
+  <form id="form-container" action="/signup" method="post">
+    <div class="form-head">
+      <h2 class="form-title">التسجيل</h2>
+    </div>
+    <div class="two-parts">
+    <div class="part-one">
+      <li class="input social-fb">التسجيل بإستخدام فايسبوك</li>
+      <label for="fname">الإسم</label>
+      <input class="input field" type="text" name="fname" placeholder="رامي" required>
+      <label for="email">الإيميل</label>
+      <input class="input field" type="email" name="email" placeholder="ramy@food.com" required>
+      <label for="fpassword">كلمة المرور</label>
+      <input class="input field" type="password" name="fpassword" required>
+    </div>
+    <div class="part-two">
+      <li class="input social-gl">التسجيل بإستخدام جوجل</li>
+      <label for="lname">إسم العائلة</label>
+      <input class="input field" type="text" name="lname" placeholder="طبايخي" required>
+      <label for="taccount">نوع الحساب</label>
+      <input class="input field" type="text" name="taccount" placeholder="طباخ" required>
+      <label for="spassword">أعد كتابة كلمة المرور</label>
+      <input class="input field" type="password" name="spassword" required>
+    </div>
+    </div>
+    <div class="part-three">
+      <h3>بالتسجيل أنت توافق على شروط إستخدام الموقع</h3>
+      <button type="submit">تسجيل</button>
+      <li id="or-login"> <a href="/login">أو إضغط هنا لتسجيل الدخول</a> </li>
+    </div>
+  </form>
+
+  <script src="resources/js/index.js" type="text/javascript"></script>
+</body>
+</html>
