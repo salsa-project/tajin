@@ -11,7 +11,7 @@ START WORKING ON TAJIN IN : 07/09/2019
 [][] -> Add FOOTER to partials
 [][] -> Create LOGIN form
 [][] -> Style LOGIN form
-[][] ->
-[][] ->
+[DONE][] -> Create WALL page
+[][] -> Style Wall Page
 [][] ->
 [][] ->

@@ -14,7 +14,7 @@ Version: 1
 7/
 8/
 9/
-10/
+?/media queries
 ----------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Lateef&display=swap');
 /******** (*) *******/
@@ -33,13 +33,15 @@ Version: 1
 body {
   background: #fcfcfc;
   direction: rtl;
+  padding-top: 70px;
 }
 /******** (navbar) *******/
 #navbar {
   position: fixed;
+  top: 0px;
   width: 100%;
   background: #FCFCFC;
-  box-shadow: 0px 0px 8px gray;
+  box-shadow: 0px 0px 8px -2px gray;
   z-index: 1;
 }
 
@@ -76,7 +78,6 @@ body {
   background: white;
   border-radius: 3px;
   box-shadow: 0px 1px 5px -2px gray;
-  transform: translateY(100px);
 }
 
 .form-head {
@@ -175,18 +176,18 @@ body {
   position: relative;
   width: 75%;
   padding: 50px;
-  margin: 0px auto;
+  margin: 0px auto 20px;
   background: #efefef;
   border-radius: 3px;
   box-shadow: 0px 1px 5px -1px gray;
-  transform: translateY(80px);
 }
 
 #this-is-ad {
   position: absolute;
   top: 0px;
   right: 0px;
-  padding: 2.5px 7px;
+  padding: 0px 7px;
+  color: white;
   background: lightgray;
 }
 
@@ -195,11 +196,11 @@ body {
   top: 0px;
   right: 40.5px;
   content: "";
-  border: 16px lightgray solid;
+  border: 14px lightgray solid;
   border-color: transparent lightgray transparent transparent;
 }
 
-#add-size {
+#ad-size {
   font-size: 54pt;
   font-weight: 400;
 }
@@ -222,26 +223,15 @@ body {
 #posts {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  transform: translateY(150px);
-}
-
-@media screen and (max-width: 1000px) {
-  #posts {
-    margin: 0 auto;
-  }
-
-  .post-detail-pic {
-    height: 200px !important;
-  }
+  width: 550px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0px 0px 5px;
-  margin: 0px auto 50px;
+  padding: 0px 0px 10px;
+  margin: 0px auto 20px;
   background: #efefef;
   border-radius: 3px;
   box-shadow: 0px 1px 5px -1px gray;
@@ -250,7 +240,7 @@ body {
 .card-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .user {
@@ -258,13 +248,14 @@ body {
 }
 
 .user-pic {
-  height: 50px;
-  width: 50px;
-  margin: 0px 2px;
+  height: 40px;
+  width: 40px;
+  margin: 0px 0px 0px 5px;
   border-radius: 50%;
 }
 
 .user-name {
+  margin: 0px 0px -7px;
   font-size: 15pt;
   font-weight: 200;
 }
@@ -281,15 +272,13 @@ body {
 }
 
 .post-detail-text {
-  padding: 3px 0px;
-  margin: 0px 10px 10px;
-  background: #e2e2e2;
-  border: 1px lightgray solid;
-  border-color: gray transparent;
+  padding: 3px 10px;
+  margin: -5px 10px 5px;
+  color: #4F4F4F;
+  background: #e8e8e8;
 }
 
 .post-detail-pic {
-  height: 270px;
   width: 100%;
 }
 
@@ -301,13 +290,11 @@ body {
 .post-stats {
   display: flex;
   justify-content: space-between;
-  padding: 0px 15px;
-  margin: 5px 0px 0px;
+  padding: 0px 10px;
 }
 
 .likes-comments {
   display: flex;
-  padding: 0px 10px;
 }
 
 .post-comments {
@@ -319,7 +306,8 @@ body {
 }
 
 .stats-count {
-  margin-top: -5px;
+  margin-top: -12px;
+  font-size: 11pt;
 }
 
 .post-comments-box {
@@ -327,14 +315,14 @@ body {
 }
 
 .post-input {
-  width: 85%;
+  width: 90%;
   padding: 3px 10px;
   border: 0px;
   text-align: right;
 }
 
 .post-submit {
-  width: 15%;
+  width: 10%;
   padding: 3px 10px;
   border: 0px;
   color: white;
@@ -351,5 +339,11 @@ body {
   width: 90%;
   margin: 0 auto;
   background: green;
-  transform: translateY(150px);
+}
+
+/******** (media queries) *******/
+@media screen and (max-width: 1000px) {
+  #posts {
+    margin: 0 auto;
+  }
 }
