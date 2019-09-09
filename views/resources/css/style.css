@@ -29,6 +29,29 @@ Version: 1
   text-align: center;
   color: #fc4f00;
 }
+/*WAREFRAME 01*/
+/* *:nth-child(odd) {
+  color: black !important;
+  background: rgba(255, 255, 73, .1) !important;
+  box-shadow: 0 0 0 1px purple !important;
+}
+*:nth-child(even) {
+  color: black !important;
+  background: rgba(0, 255, 85, .1) !important;
+  box-shadow: 0 0 0 1px blue !important;
+} */
+
+/*WAREFRAME02*/
+/* * { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); } */
+
 /******** (body) *******/
 body {
   background: #fcfcfc;
@@ -175,6 +198,7 @@ body {
 .ad {
   position: relative;
   width: 75%;
+  max-width: 900px;
   padding: 50px;
   margin: 0px auto 20px;
   background: #efefef;
@@ -205,31 +229,31 @@ body {
   font-weight: 400;
 }
 
-#body {
+#body{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 #container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 75%;
-  padding: 0px 0px;
+  justify-content: center;
+  width: 85%;
+  max-width: 1035px;
+  margin: 0 auto;
 }
 
 #posts {
   display: flex;
   flex-direction: column;
-  width: 550px;
+  max-width: 600px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   padding: 0px 0px 10px;
   margin: 0px auto 20px;
   background: #efefef;
@@ -330,8 +354,8 @@ body {
 }
 
 #ten-recipes-container {
-  width: 40%;
-  background: purple;
+  min-width: 350px;
+  width: 35%;
 }
 
 #ten-recipes {
@@ -342,8 +366,16 @@ body {
 }
 
 /******** (media queries) *******/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
+  #container{
+    flex-wrap: wrap;
+  }
   #posts {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  #container, .card, .ad {
+    width: 100%;
   }
 }
