@@ -197,8 +197,7 @@ body {
 /******** (wall) *******/
 .ad {
   position: relative;
-  width: 75%;
-  max-width: 900px;
+  width: 910px;
   padding: 50px;
   margin: 0px auto 20px;
   background: #efefef;
@@ -233,29 +232,27 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 #container {
   display: flex;
-  justify-content: center;
-  width: 85%;
-  max-width: 1035px;
+  justify-content: space-between;
+  width: 910px;
   margin: 0 auto;
 }
 
 #posts {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 585px;
+  max-width: 700px;
   padding: 0px 0px 10px;
-  margin: 0px auto 20px;
+  margin: 0px 0px 20px;
   background: #efefef;
   border-radius: 3px;
   box-shadow: 0px 1px 5px -1px gray;
@@ -276,12 +273,14 @@ body {
   width: 40px;
   margin: 0px 0px 0px 5px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .user-name {
   margin: 0px 0px -7px;
   font-size: 15pt;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .post-time {
@@ -293,6 +292,7 @@ body {
 .post-other-options-dots {
   font-size: 16pt;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .post-detail-text {
@@ -300,10 +300,12 @@ body {
   margin: -5px 10px 5px;
   color: #4F4F4F;
   background: #e8e8e8;
+  cursor: pointer;
 }
 
 .post-detail-pic {
   width: 100%;
+  cursor: pointer;
 }
 
 .post-stats-container {
@@ -321,8 +323,13 @@ body {
   display: flex;
 }
 
+.post-likes, .post-shares {
+  cursor: pointer;
+}
+
 .post-comments {
   margin: 0px 20px;
+  cursor: pointer;
 }
 
 .stat-icons {
@@ -351,6 +358,7 @@ body {
   border: 0px;
   color: white;
   background: #FC4D01;
+  cursor: pointer;
 }
 
 #ten-recipes-container {
@@ -360,22 +368,26 @@ body {
 
 #ten-recipes {
   height: 400px;
-  width: 90%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 0px 30px 0px 0px;
   background: green;
 }
 
 /******** (media queries) *******/
-@media screen and (max-width: 900px) {
-  #container{
-    flex-wrap: wrap;
+@media screen and (max-width: 945px){
+  .ad{
+    width: 585px;
   }
-  #posts {
-    margin: 0 auto;
+  #container{
+    flex-direction: column;
+    width: auto;
+  }
+  #posts{
+    margin: 0px auto;
   }
 }
-@media screen and (max-width: 600px) {
-  #container, .card, .ad {
+@media screen and (max-width: 610px) {
+  .card, .ad {
     width: 100%;
   }
 }
