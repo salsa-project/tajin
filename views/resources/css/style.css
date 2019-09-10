@@ -62,6 +62,7 @@ body {
 #navbar {
   position: fixed;
   top: 0px;
+  right: 0px;
   width: 100%;
   background: #FCFCFC;
   box-shadow: 0px 0px 8px -2px gray;
@@ -212,19 +213,20 @@ body {
   padding: 0px 7px;
   color: white;
   background: lightgray;
+  font-size: 11pt;
 }
 
 #this-is-ad::after {
   position: absolute;
   top: 0px;
-  right: 40.5px;
+  right: 35px;
   content: "";
-  border: 14px lightgray solid;
+  border: 11px lightgray solid;
   border-color: transparent lightgray transparent transparent;
 }
 
 #ad-size {
-  font-size: 54pt;
+  font-size: 9vw;
   font-weight: 400;
 }
 
@@ -346,14 +348,14 @@ body {
 }
 
 .post-input {
-  width: 90%;
+  width: 85%;
   padding: 3px 10px;
   border: 0px;
   text-align: right;
 }
 
 .post-submit {
-  width: 10%;
+  width: 15%;
   padding: 3px 10px;
   border: 0px;
   color: white;
@@ -364,6 +366,7 @@ body {
 #ten-recipes-container {
   min-width: 350px;
   width: 35%;
+  background: red !important;
 }
 
 #ten-recipes {
@@ -387,7 +390,11 @@ body {
   }
 }
 @media screen and (max-width: 610px) {
-  .card, .ad {
-    width: 100%;
+  .card, .ad, #container, #ten-recipes-container, #ten-recipes {
+    width: 100% !important;
+    min-width: 100%;
+  }
+  #ten-recipes{
+    margin: 0px;
   }
 }
