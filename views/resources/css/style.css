@@ -11,7 +11,7 @@ Version: 1
 4/signup
 5/login
 6/wall
-7/
+7/stores
 8/
 9/
 ?/media queries
@@ -226,7 +226,7 @@ body {
 }
 
 #ad-size {
-  font-size: 9vw;
+  font-size: 2em;
   font-weight: 400;
 }
 
@@ -366,17 +366,109 @@ body {
 #ten-recipes-container {
   min-width: 350px;
   width: 35%;
-  background: red !important;
 }
 
 #ten-recipes {
+  position: sticky;
+  top: 10%;
+  left: 0px;
   height: 400px;
   width: 85%;
   margin: 0px 30px 0px 0px;
-  background: green;
+  background: #EFEFEF;
+  border-radius: 3px;
+  /* box-shadow: 0px 1px 5px -1px gray; */
 }
 
+/******** (stores) *******/
+#store-container{
+  display: flex;
+  flex-direction: column;
+  width: 910px;
+  margin: 0px auto;
+  background: #FCFCFC;
+}
+#store-search{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto 70px;
+}
+.store-search{
+  height: 35px;
+  width: 200px;
+  margin: 0px 20px;
+  background: #F7F7F7;
+  border: 1px #FC6432 solid;
+  border-radius: 3px;
+}
+#store-card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.store-card{
+  height: 225px;
+  width: 170px;
+  padding: 10px;
+  margin: 0px 25px 50px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px -1px gray;
+}
+.store-card-header{
+  display: flex;
+  justify-content: space-between;
+}
+.store-card-header-pic{
+  height: 20px;
+  margin: 0px 0px 5px;
+  cursor: pointer;
+}
+.store-card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.store-picture{
+  height: 85px;
+  width: 85px;
+  margin: 0px 0px 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.store-card-name{
+  font-size: 16pt;
+  cursor: pointer;
+}
+.store-card-tags{
+  display: flex;
+  justify-content: space-between;
+  min-width: 55%;
+  margin: 0px 0px 10px;
+}
+.store-tag{
+  color: gray;
+  cursor: pointer;
+}
+.store-card-rate{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.store-card-rate-text{
+  color: gray;
+}
+.store-star{
+  height: 20px;
+  margin: 3px 0px 0px;
+}
 /******** (media queries) *******/
+@media screen and (min-width: 1200px){
+  #store-container{
+    width: 80%;
+  }
+}
 @media screen and (max-width: 945px){
   .ad{
     width: 585px;
@@ -388,6 +480,9 @@ body {
   #posts{
     margin: 0px auto;
   }
+  #store-container{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 610px) {
   .card, .ad, #container, #ten-recipes-container, #ten-recipes {
@@ -396,5 +491,40 @@ body {
   }
   #ten-recipes{
     margin: 0px;
+  }
+  #store-search{
+    flex-direction: column;
+  }
+  .store-search{
+    margin: 0 auto 10px;
+  }
+  .store-card{
+    height: 165px;
+    width: 140px;
+    margin: 10px;
+  }
+  .store-card-header-pic{
+    height: 17px;
+  }
+  .store-picture{
+    height: 55px;
+    width: 55px;
+    margin: -5px 0px 0px;
+  }
+  .store-card-name, .store-tag{
+    padding: 0 5px;
+    font-size: 12pt;
+  }
+  .store-card-rate-text{
+    font-size: 12pt;
+  }
+  .store-card-tags{
+    margin: 0px 0px 7px;
+  }
+  .store-card-rate{
+    width: 110%;
+  }
+  .store-star{
+    height: 17px;
   }
 }
