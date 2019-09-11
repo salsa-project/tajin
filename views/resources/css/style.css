@@ -155,13 +155,13 @@ body {
   background: #f7f7f7;
 }
 
-.part-three>h3 {
+#site-conditions{
   margin-top: 20px;
   font-size: 11pt;
   font-weight: 100;
 }
 
-.part-three>button {
+#signup-btn, #login-btn {
   width: 40%;
   padding: 5px 0px;
   margin: 3px 0px 10px;
@@ -385,6 +385,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 910px;
+  padding: 0px 25px;
   margin: 0px auto;
   background: #FCFCFC;
 }
@@ -392,7 +393,7 @@ body {
   width: 80%;
   display: flex;
   justify-content: center;
-  margin: 0px auto 70px;
+  margin: 0px auto 50px;
 }
 .store-search{
   height: 35px;
@@ -408,10 +409,10 @@ body {
   flex-wrap: wrap;
 }
 .store-card{
-  height: 225px;
-  width: 170px;
+  height: 190px;
+  width: 145px;
   padding: 10px;
-  margin: 0px 25px 50px;
+  margin: 0px 30px 60px;
   background: white;
   border-radius: 3px;
   box-shadow: 0px 1px 5px -1px gray;
@@ -422,7 +423,7 @@ body {
 }
 .store-card-header-pic{
   height: 20px;
-  margin: 0px 0px 5px;
+  margin: 0px 0px 0px;
   cursor: pointer;
 }
 .store-card-body{
@@ -431,9 +432,9 @@ body {
   align-items: center;
 }
 .store-picture{
-  height: 85px;
-  width: 85px;
-  margin: 0px 0px 3px;
+  height: 65px;
+  width: 65px;
+  margin: 0px 0px 0px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -445,10 +446,11 @@ body {
   display: flex;
   justify-content: space-between;
   min-width: 55%;
-  margin: 0px 0px 10px;
+  margin: 0px 0px 8px;
 }
 .store-tag{
   color: gray;
+  font-size: 11pt;
   cursor: pointer;
 }
 .store-card-rate{
@@ -460,8 +462,8 @@ body {
   color: gray;
 }
 .store-star{
-  height: 20px;
-  margin: 3px 0px 0px;
+  height: 15px;
+  margin: 7px 0px 0px;
 }
 /******** (media queries) *******/
 @media screen and (min-width: 1200px){
@@ -482,9 +484,71 @@ body {
   }
   #store-container{
     width: 100%;
+    padding: 0px;
   }
 }
 @media screen and (max-width: 610px) {
+  /*-----Signup & Login-----*/
+  #form-container, #form-container-login{
+    width: 100%;
+  }
+  .form-head{
+    height: 40px;
+    padding: 5px;
+  }
+  .two-parts{
+    padding: 5px 0px;
+    justify-content: space-between;
+  }
+  .part-one, .part-two{
+    width: 49%;
+  }
+  .input{
+    padding: 2px;
+  }
+  #site-conditions{
+    margin-top: 10px;
+  }
+  #signup-btn, #login-btn{
+    width: 95%;
+    padding: 3px 0px;
+    margin-bottom: 5px;
+  }
+  .r-input, .login-input{
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .l-input, .login-input{
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .login, .login-input, .social-login{
+    width : 100%;
+  }
+  .social-login{
+    flex-direction: column;
+  }
+  .social-fb, .social-gl{
+    width: 80%;
+    margin: 0px auto 10px;
+  }
+  .social-fb, .social-gl {
+    color: #2171F2;
+    background: white;
+    border-color: #2171F2;
+    cursor: pointer;
+  }
+  .social-gl {
+    color: #FF0E00;
+    border-color: #FF0E00;
+  }
+  .signup-socail-fb, .signup-socail-gl{
+    width: 100%;
+  }
+
+  /*-----WALL PAGE-----*/
   .card, .ad, #container, #ten-recipes-container, #ten-recipes {
     width: 100% !important;
     min-width: 100%;
@@ -494,8 +558,10 @@ body {
   }
   #store-search{
     flex-direction: column;
+    margin-bottom: 20px;
   }
   .store-search{
+    width: 95%;
     margin: 0 auto 10px;
   }
   .store-card{
