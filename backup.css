@@ -467,23 +467,130 @@ body {
 }
 /******** (media queries) *******/
 @media screen and (min-width: 1200px){
-  #store-container{width: 80%; }
-}
-@media screen and (min-width: 1800px){
-  .ad{padding: 100px 0px; width: 70%; }
-  #container{width: 70%; justify-content: space-around; }
-  #posts{width: 50%; }
-  .card{min-width: 100%; }
-  #ten-recipes-container{height: 500px; width: 45%;}
-  #ten-recipes{width: 100%;}
+  #store-container{
+    width: 80%;
+  }
 }
 @media screen and (max-width: 945px){
-  /*Verified*/
-  .ad{width: 96%; }
-  #container{width: 96%; margin: 0px auto; justify-content: space-between;}
-  #posts{margin: 0px auto; }
-  .card{width: 100%; }
-  #ten-recipes-container{min-width: 300px;}
-  #store-container{width: 100%; padding: 0px; }
-  /*end*/
+  .ad{
+    width: 585px;
+  }
+  #container{
+    flex-direction: column;
+    width: auto;
+  }
+  #posts{
+    margin: 0px auto;
+  }
+  #store-container{
+    width: 100%;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 610px) {
+  /*-----Signup & Login-----*/
+  #form-container, #form-container-login{
+    width: 100%;
+  }
+  .form-head{
+    height: 40px;
+    padding: 5px;
+  }
+  .two-parts{
+    padding: 5px 0px;
+    justify-content: space-between;
+  }
+  .part-one, .part-two{
+    width: 49%;
+  }
+  .input{
+    padding: 2px;
+  }
+  #site-conditions{
+    margin-top: 10px;
+  }
+  #signup-btn, #login-btn{
+    width: 95%;
+    padding: 3px 0px;
+    margin-bottom: 5px;
+  }
+  .r-input, .login-input{
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .l-input, .login-input{
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .login, .login-input, .social-login{
+    width : 100%;
+  }
+  .social-login{
+    flex-direction: column;
+  }
+  .social-fb, .social-gl{
+    width: 80%;
+    margin: 0px auto 10px;
+  }
+  .social-fb, .social-gl {
+    color: #2171F2;
+    background: white;
+    border-color: #2171F2;
+    cursor: pointer;
+  }
+  .social-gl {
+    color: #FF0E00;
+    border-color: #FF0E00;
+  }
+  .signup-socail-fb, .signup-socail-gl{
+    width: 100%;
+  }
+
+  /*-----WALL PAGE-----*/
+  .card, .ad, #container, #ten-recipes-container, #ten-recipes {
+    width: 100% !important;
+    min-width: 100%;
+  }
+  #ten-recipes{
+    margin: 0px;
+  }
+  #store-search{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .store-search{
+    width: 95%;
+    margin: 0 auto 10px;
+  }
+  .store-card{
+    height: 165px;
+    width: 140px;
+    margin: 10px;
+  }
+  .store-card-header-pic{
+    height: 17px;
+  }
+  .store-picture{
+    height: 55px;
+    width: 55px;
+    margin: -5px 0px 0px;
+  }
+  .store-card-name, .store-tag{
+    padding: 0 5px;
+    font-size: 12pt;
+  }
+  .store-card-rate-text{
+    font-size: 12pt;
+  }
+  .store-card-tags{
+    margin: 0px 0px 7px;
+  }
+  .store-card-rate{
+    width: 110%;
+  }
+  .store-star{
+    height: 17px;
+  }
 }

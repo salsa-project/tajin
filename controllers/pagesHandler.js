@@ -1,10 +1,11 @@
 const router = require('express').Router();
 
 router.get('/', (req,res)=>{
+  console.log(req.device.type);
   res.redirect('/home');
 })
 router.get('/home', (req,res)=>{
-  res.render('home');
+  res.render('home', {device: req.device.type.toUpperCase()});
 })
 router.get('/wall', (req,res)=>{
   res.render('wall');
