@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const pagesHandler = require('./controllers/pagesHandler');
+const pagesPhoneHandler = require('./controllers/pagesPhoneHandler');
+const deviceChecker = require('./controllers/checkDeviceHandler');
 
 const app = express();
 const PORT = process.env.PORT || 5050;
@@ -13,10 +15,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(device.capture());
 
-app.use('/', pagesHandler);
+//Device Checker & Handler
+deviceChecker(app);
 
+//Template "ejs"
 app.set('view engine', 'ejs');
 
 
-
+//serve responses on PORT
 app.listen(PORT, console.log(`Server running on PORT : ${PORT}`));

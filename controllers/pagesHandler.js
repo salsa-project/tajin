@@ -1,7 +1,6 @@
 const router = require('express').Router();
 
 router.get('/', (req,res)=>{
-  console.log(req.device.type);
   res.redirect('/home');
 })
 router.get('/home', (req,res)=>{
