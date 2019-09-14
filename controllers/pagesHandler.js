@@ -6,8 +6,8 @@ router.get('/', (req,res)=>{
 router.get('/home', (req,res)=>{
   res.render('home', {device: req.device.type.toUpperCase()});
 })
-router.get('/wall', (req,res)=>{
-  res.render('wall');
+router.get('/wall', (req,res,next)=>{
+  res.render('wall')
 })
 router.get('/explore', (req,res)=>{
   res.render('explore');

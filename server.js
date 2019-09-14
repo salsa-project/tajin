@@ -10,6 +10,9 @@ const deviceChecker = require('./controllers/checkDeviceHandler');
 const app = express();
 const PORT = process.env.PORT || 5050;
 
+//Template "ejs"
+app.set('view engine', 'ejs');
+
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -17,9 +20,6 @@ app.use(device.capture());
 
 //Device Checker & Handler
 deviceChecker(app);
-
-//Template "ejs"
-app.set('view engine', 'ejs');
 
 
 //serve responses on PORT
