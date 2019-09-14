@@ -25,7 +25,7 @@ function desktopOrPhone(req, res, next){
 
     }else{
       //if Url contains "mobile"
-      res.send("<h1 style='text-align: center; transform: translateY(50vh);'>You Can't Access This URL From Desktop!</h1>")
+      res.redirect('/home')
     }
 
   }else if(req.device.type == "phone" && currentUrl.indexOf('mobile') < 0){
