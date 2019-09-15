@@ -19,8 +19,10 @@ const PORT = process.env.PORT || 5050;
 //Template "ejs"
 app.set('view engine', 'ejs');
 
-//serve static file
+//serve static files for desktop
 app.use(express.static(path.join(__dirname, 'views')));
+//serve static files for phone
+app.use(express.static(path.join(__dirname, 'views', 'phone')));
 //parse forms
 app.use(bodyParser.urlencoded({extended: true}));
 //parse json

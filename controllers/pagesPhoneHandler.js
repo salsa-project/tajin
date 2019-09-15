@@ -1,19 +1,20 @@
 const router = require('express').Router();
+var dir = 'phone/';
 
 router.get('/', (req,res)=>{
   res.redirect('/mobile/home');
 })
 router.get('/home', (req,res)=>{
-  res.render('home-phone', {device: req.device.type.toUpperCase()});
+  res.render(dir + 'home-phone', {device: req.device.type.toUpperCase()});
 })
 router.get('/wall', (req,res,next)=>{
-  res.render('wall-phone')
+  res.render(dir + 'wall-phone')
 })
 router.get('/explore', (req,res)=>{
-  res.render('explore-phone');
+  res.render(dir + 'explore-phone');
 })
 router.get('/stores', (req,res)=>{
-  res.render('stores-phone');
+  res.render(dir + 'stores-phone');
 })
 
 // Signup/Login Function
@@ -24,7 +25,7 @@ signs();
 function signs(){
   //login handlers
   router.get('/login', (req,res)=>{
-    res.render('login-phone');
+    res.render(dir + 'login-phone');
   })
   router.post('/login', (req,res)=>{
     console.log(req.body);
@@ -32,7 +33,7 @@ function signs(){
   })
   //signup handlers
   router.get('/signup', (req,res)=>{
-    res.render('signup-phone');
+    res.render(dir + 'signup-phone');
   })
   router.post('/signup', (req,res)=>{
     console.log(req.body);
