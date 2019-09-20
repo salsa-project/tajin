@@ -1,12 +1,14 @@
+
+
 <div id="navbar">
   <div id="navDivs">
     <ul id="siteTabs">
-      <li class="nav-item"> <a id="home" class="hrefItem" href="/"><img class="nav-item-image active" src="/resources/images/Home.png" alt="home"> </a> </li>
-      <li class="nav-item"> <a class="hrefItem" href="/mobile/wall"><img class="nav-item-image" src="/resources/images/Wall.png" alt="Wall"> </a> </li>
-      <li class="nav-item"> <a class="hrefItem" href="/mobile/stores"><img class="nav-item-image" src="/resources/images/Stores.png" alt="Stores"> </a> </li>
-      <li class="nav-item"> <a class="hrefItem" href="/mobile/explore"><img class="nav-item-image" src="/resources/images/Explore.png" alt="Explore"> </a> </li>
-      <li class="nav-item"> <a class="hrefItem" href="/mobile/login"><img class="nav-item-image" src="/resources/images/Login.png" alt="Login"> </a> </li>
-      <li class="nav-item"> <a class="hrefItem" href="/mobile/signup"><img class="nav-item-image" src="/resources/images/Signup.png" alt="Signup"> </a> </li>
+      <li class="nav-item"> <a id="home" class="hrefItem" href="/"><img class="nav-item-image <% if(data == 'home'){ %> <%= status %> <% } %>" src="/resources/images/Home.png" alt="home"> </a> </li>
+      <li class="nav-item"> <a class="hrefItem " href="/mobile/wall"><img class="nav-item-image <% if(data == 'wall'){ %> <%= status %> <% } %>" src="/resources/images/Wall.png" alt="Wall"> </a> </li>
+      <li class="nav-item"> <a class="hrefItem " href="/mobile/stores"><img class="nav-item-image <% if(data == 'stores'){ %> <%= status %> <% } %>" src="/resources/images/Stores.png" alt="Stores"> </a> </li>
+      <li class="nav-item"> <a class="hrefItem " href="/mobile/explore"><img class="nav-item-image <% if(data == 'explore'){ %> <%= status %> <% } %>" src="/resources/images/Explore.png" alt="Explore"> </a> </li>
+      <li class="nav-item"> <a class="hrefItem" href="/mobile/login"><img class="nav-item-image <% if(data == 'login'){ %> <%= status %> <% } %>" src="/resources/images/Login.png" alt="Login"> </a> </li>
+      <li class="nav-item"> <a class="hrefItem " href="/mobile/signup"><img class="nav-item-image <% if(data == 'signup'){ %> <%= status %> <% } %>" src="/resources/images/Signup.png" alt="Signup"> </a> </li>
     </ul>
   </div>
 </div>

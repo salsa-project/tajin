@@ -79,7 +79,11 @@ body {
 }
 .nav-item-image{
   height: 35px;
+  filter: grayscale(1);
 }
 img{
   height: 100px;
+}
+.active{
+  filter: grayscale(0) !important;
 }

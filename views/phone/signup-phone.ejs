@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="/resources/css/style-phone.css">
 </head>
 <body>
-  <% include partials/nav-phone.ejs %>
+  <%- include('partials/nav-phone.ejs', {data: "signup", status: 'active'}) %>
 
   <form id="form-container" action="/signup" method="post">
     <div class="form-head">
@@ -19,9 +19,9 @@
       <label for="fname">الإسم</label>
       <input class="input r-input field" type="text" name="fname" placeholder="رامي" required>
       <label for="email">الإيميل</label>
-      <input class="input r-input field" type="email" name="email" placeholder="ramy@food.com" required>
-      <label for="fpassword">كلمة المرور</label>
-      <input class="input r-input field" type="password" name="fpassword" required>
+      <input class="input r-input field" type="email" name="email" placeholder="ramy@food.com" autocomplete="email" required>
+      <label for="password">كلمة المرور</label>
+      <input class="input r-input field" type="password" name="password" autocomplete="new-password">
     </div>
     <div class="part-two">
       <li class="input l-input signup-socail-gl social-gl">التسجيل بإستخدام جوجل</li>
@@ -29,8 +29,6 @@
       <input class="input l-input  field" type="text" name="lname" placeholder="طبايخي" required>
       <label for="taccount">نوع الحساب</label>
       <input class="input l-input field" type="text" name="taccount" placeholder="طباخ" required>
-      <label for="spassword">أعد كتابة كلمة المرور</label>
-      <input class="input l-input field" type="password" name="spassword" required>
     </div>
     </div>
     <div class="part-three">
