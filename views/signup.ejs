@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="resources/css/style.css">
 </head>
 <body>
-  <% include partials/nav.ejs %>
+  <%- include('partials/nav.ejs' , {data: 'signup', status: 'active'}) %>
 
   <form id="form-container" action="/signup" method="post">
     <div class="form-head">

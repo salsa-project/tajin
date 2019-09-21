@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="resources/css/style.css">
 </head>
 <body>
-  <% include partials/nav.ejs %>
+  <%- include('partials/nav.ejs' , {data: 'stores', status: 'active'}) %>
 
   <section id="store-container">
     <div id="store-search">

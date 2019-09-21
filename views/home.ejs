@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="resources/css/style.css">
 </head>
 <body>
-  <% include partials/nav.ejs %>
+  <%- include('partials/nav.ejs' , {data: 'home', status: 'active'}) %>
 
   <h1>Device Type Is : <span style="color: green;"><%= device %></span> </h1>
 

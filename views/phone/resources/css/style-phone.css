@@ -8,8 +8,8 @@ Version: 1
 1- *
 2/ body
 3/navbar
-4/signup
-5/login
+4/login
+5/signup
 6/wall
 7/stores
 8/
@@ -56,7 +56,6 @@ Version: 1
 body {
   background: #fcfcfc;
   direction: rtl;
-  padding-top: 80px;
 }
 /******** (navbar) *******/
 #navbar {
@@ -81,9 +80,77 @@ body {
   height: 35px;
   filter: grayscale(1);
 }
-img{
-  height: 100px;
-}
 .active{
   filter: grayscale(0) !important;
+}
+
+/******** (login) *******/
+.login{
+  height: 90vh;
+  background-image: url('../images/login-background.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#form-container-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.social-login{
+  margin: 0px 0px 10px;
+}
+#social-fb{
+  width: 70vw;
+  color: white;
+  background: #2171f2;
+  font-size: 15pt;
+  border-radius: 3px;
+  border: 0px;
+}
+#social-tw{
+  width: 70vw;
+  margin: 10px 0px;
+  color: white;
+  background: #30b4f2;
+  font-size: 15pt;
+  border-radius: 3px;
+  border: 0px;
+}
+#social-gl{
+  width: 70vw;
+  color: white;
+  background: red;
+  font-size: 15pt;
+  border-radius: 3px;
+  border: 0px;
+}
+.login-info{
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  width: 90vw;
+  padding: 3px 0px;
+  margin: 0px 0px 3px;
+  border: 1px #fc4f00 solid;
+  border-radius: 50px;
+}
+#login-btn{
+  width: 90vw;
+  padding: 2px 0px;
+  margin: 20px 0px 10px;
+  color: white;
+  background: #fc4f00;
+  font-size: 18pt;
+  border: 1px #fc4f00 solid;
+  border-radius: 50px;
+}
+#or-login>a{
+  color: gray;
+}
+
+img{
+  height: 100px;
 }

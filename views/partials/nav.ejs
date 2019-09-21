@@ -1,14 +1,14 @@
 <div id="navbar">
   <div id="navDivs">
     <ul id="siteTabs">
-      <li class="navItem"><a class="hrefItem" href="/home">الرئيسية</a></li>
-      <li class="navItem"><a class="hrefItem" href="/wall">الحائط</a></li>
-      <li class="navItem"><a class="hrefItem" href="/stores">المتاجر</a></li>
-      <li class="navItem"><a class="hrefItem" href="/explore">إكتشف</a></li>
+      <li class="navItem"><a class="hrefItem <% if(data == 'home') { %> <%= status %> <% } %>" href="/home">الرئيسية</a></li>
+      <li class="navItem"><a class="hrefItem <% if(data == 'wall') { %> <%= status %> <% } %>" href="/wall">الحائط</a></li>
+      <li class="navItem"><a class="hrefItem <% if(data == 'stores') { %> <%= status %> <% } %>" href="/stores">المتاجر</a></li>
+      <li class="navItem"><a class="hrefItem <% if(data == 'explore') { %> <%= status %> <% } %>" href="/explore">إكتشف</a></li>
     </ul>
     <ul id="userTabs">
-      <li class="navItem"><a class="hrefItem" href="/signup">التسجيل </a>/</li>
-      <li class="navItem"><a class="hrefItem" href="/login"> تسجيل الدخول</a></li>
+      <li class="navItem"><a class="hrefItem <% if(data == 'signup') { %> <%= status %> <% } %>" href="/signup">التسجيل </a>/</li>
+      <li class="navItem"><a class="hrefItem <% if(data == 'login') { %> <%= status %> <% } %>" href="/login"> تسجيل الدخول</a></li>
     </ul>
   </div>
 </div>
