@@ -88,9 +88,10 @@ body {
 #form-container-login{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 95vh;
+  margin: 40px 0px 0px;
 }
 .social-login{
   display: flex;
@@ -103,7 +104,7 @@ body {
   height: 40px;
   margin: 0px 15px;
 }
-#or{
+#login-with{
   width: 100%;
   padding: 10px 0px;
   color: gray;
