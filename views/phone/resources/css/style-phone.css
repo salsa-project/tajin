@@ -99,7 +99,7 @@ body {
   height: 100%;
 }
 .social-login{
-  margin: 0px 0px 10px;
+  margin: 0px 0px 5px;
 }
 #social-fb{
   width: 70vw;
@@ -111,7 +111,7 @@ body {
 }
 #social-tw{
   width: 70vw;
-  margin: 10px 0px;
+  margin: 5px 0px;
   color: white;
   background: #30b4f2;
   font-size: 15pt;
@@ -140,7 +140,7 @@ body {
 #login-btn{
   width: 90vw;
   padding: 2px 0px;
-  margin: 20px 0px 10px;
+  margin: 10px 0px 10px;
   color: white;
   background: #fc4f00;
   font-size: 18pt;
