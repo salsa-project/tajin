@@ -10,19 +10,20 @@
   <%- include('partials/nav-phone.ejs', {data: "login", status: 'active'}) %>
 <div class="login">
   <form id="form-container-login" class="login-form" action="/login" method="post">
-  
+      <p id="or">تسجيل الدخول بوسائل التواصل  الإجتماعي :</p>
       <div class="social-login">
-        <li id="social-fb" class="input social-fb-login">الدخول بإستخدام فايسبوك</li>
-        <li id="social-tw" class="input social-tw-login">الدخول بإستخدام تويتر</li>
-        <li id="social-gl" class="input social-gl-login">الدخول بإستخدام جوجل</li>
+        <li id="social-fb" class="login-input-img social-fb-login"> <img src="/resources/images/social/facebook.png" alt="fb"> </li>
+        <li id="social-tw" class="login-input-img social-tw-login"><img src="/resources/images/social/twitter.png" alt="tw"></li>
+        <li id="social-gl" class="login-input-img social-gl-login"><img src="/resources/images/social/google.png" alt="gl"></li>
       </div>
+      <p id="or">أو الدخول بإستخدام :</p>
+      <div class="login-info-container">
     <div class="login-info">
       <label for="email">الإيميل</label>
-      <input class="input login-input field" type="email" name="email" placeholder="ramy@food.com" autocomplete="email" required>
+      <input class="login-input login-input field" type="email" name="email" placeholder="ramy@food.com" autocomplete="email" required>
       <label for="password">كلمة المرور</label>
-      <input class="input login-input field" type="password" name="password" autocomplete="current-password">
+      <input class="login-input login-input field" type="password" name="password" autocomplete="current-password" placeholder="password">
     </div>
-    <div class="">
       <button id="login-btn" type="submit">دخول</button>
       <li id="or-login"> <a href="/mobile/signup">أو إضغط هنا للتسجيل</a> </li>
     </div>
