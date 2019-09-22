@@ -85,6 +85,9 @@ body {
 }
 
 /******** (login) *******/
+#login-body{
+  background-image: url('/resources/images/login-background.jpg');
+}
 #form-container-login{
   display: flex;
   flex-direction: column;
