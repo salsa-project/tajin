@@ -85,9 +85,6 @@ body {
 }
 
 /******** (login) *******/
-#login-body{
-  background-image: url('/resources/images/login-background.jpg');
-}
 #form-container-login{
   display: flex;
   flex-direction: column;
@@ -117,7 +114,7 @@ body {
   font-size: 16pt;
   font-weight: 600;
 }
-.login-info-container{
+.login-info-container, .signup-info-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,18 +126,18 @@ body {
   display: flex;
   flex-direction: column;
 }
-.login-input{
+.login-input, .input-signup{
   width: 90vw;
   padding: 3px 0px;
   margin: 0px 0px 3px;
   border: 1px #fc4f00 solid;
   border-radius: 50px;
 }
-.login-input:focus{
+.login-input:focus, .input-signup:focus{
   outline: none;
   box-shadow: 0px 0px 8px -2px #fc4f00;
 }
-#login-btn{
+#login-btn, #signup-btn{
   width: 90vw;
   padding: 2px 0px;
   margin: 10px 0px;
@@ -155,6 +152,24 @@ body {
 }
 
 /******** (signup) *******/
+#form-container{
+  display: flex;
+  flex-direction: column;
+}
+.social-signup{
+  margin: 20px 0px 0px;
+}
+.signup-info-container{
+  margin-bottom: 40px;
+}
+.input-signup{
+
+}
+.select-signup{
+  /* padding-right: 80px; */
+  background: white;
+}
+
 
 img{
   height: 100px;

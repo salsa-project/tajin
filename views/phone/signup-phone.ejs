@@ -10,32 +10,31 @@
   <%- include('partials/nav-phone.ejs', {data: "signup", status: 'active'}) %>
 
   <form id="form-container" action="/signup" method="post">
-    <!-- <div class="form-head">
-      <h2 class="form-title">التسجيل</h2>
-    </div> -->
-    <div class="two-parts">
-    <div class="part-one">
-      <li class="input r-input signup-socail-fb social-fb">التسجيل بإستخدام فايسبوك</li>
-      <label for="fname">الإسم</label>
-      <input class="input r-input field" type="text" name="fname" placeholder="رامي" required>
-      <label for="email">الإيميل</label>
-      <input class="input r-input field" type="email" name="email" placeholder="ramy@food.com" autocomplete="email" required>
-      <label for="password">كلمة المرور</label>
-      <input class="input r-input field" type="password" name="password" autocomplete="new-password">
+
+    <div class="social-signup social-login">
+      <li id="social-fb" class="login-input-img social-fb-login"> <img src="/resources/images/social/facebook.png" alt="fb"> </li>
+      <li id="social-tw" class="login-input-img social-tw-login"><img src="/resources/images/social/twitter.png" alt="tw"></li>
+      <li id="social-gl" class="login-input-img social-gl-login"><img src="/resources/images/social/google.png" alt="gl"></li>
     </div>
-    <div class="part-two">
-      <li class="input l-input signup-socail-gl social-gl">التسجيل بإستخدام جوجل</li>
-      <label for="lname">إسم العائلة</label>
-      <input class="input l-input  field" type="text" name="lname" placeholder="طبايخي" required>
+    <p id="login-with">أو التسجيل بإستخدام :</p>
+    <div class="signup-info-container">
+      <label for="name">الإسم</label>
+      <input class="input-signup r-input" type="text" name="name" placeholder="رامي" required>
       <label for="taccount">نوع الحساب</label>
-      <input class="input l-input field" type="text" name="taccount" placeholder="طباخ" required>
-    </div>
-    </div>
-    <div class="part-three">
+      <!-- <input class="input-signup l-input" type="text" name="taccount" placeholder="طباخ" required> -->
+      <select class="input-signup select-signup" name="taccount" form="form-container">
+        <option class="select-option-signup" value="volvo">طباخ</option>
+        <option class="select-option-signup" value="saab">مستخدم</option>
+      </select>
+      <label for="email">الإيميل</label>
+      <input class="input-signup r-input" type="email" name="email" placeholder="ramy@food.com" autocomplete="email" required>
+      <label for="password">كلمة المرور</label>
+      <input class="input-signup r-input" type="password" name="password" autocomplete="new-password">
       <p id="site-conditions">بالتسجيل أنت توافق على شروط إستخدام الموقع</p>
       <button id="signup-btn" type="submit">تسجيل</button>
       <li id="or-login"> <a href="/login">أو إضغط هنا لتسجيل الدخول</a> </li>
     </div>
+
   </form>
 
 <script src="/resources/js/index-phone.js" type="text/javascript"></script>
