@@ -171,6 +171,114 @@ body {
 }
 
 
+/******** (wall) *******/
+#body-wall{
+  background: rgba(200,200,200, 0.2);
+}
+#body{
+  margin-bottom: 40px;
+}
+#posts{
+  display: flex;
+  flex-direction: column;
+}
+.card:first-child{
+  margin: 0px 0px 10px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  background: white;
+  box-shadow: 0px 0px 5px -2px gray;
+}
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 5px;
+}
+.user{
+  display: flex;
+}
+.user-pic{
+  height: 40px;
+  border-radius: 50%;
+}
+.user-info{
+  padding: 3px 5px 0px 0px;
+}
+.user-name{
+  margin-bottom: -8px;
+}
+.user-info>p{
+  color: lightgray;
+  font-size: 12pt;
+}
+.post-other-options-dots{
+  font-size: 16pt;
+  font-weight: 900;
+}
+.post-detail-text{
+  padding: 0px 8px 5px;
+  color: gray;
+}
+.post-detail-pic{
+  height: auto;
+  width: 100vw;
+  margin: 5px 0px 0px;
+}
+.post-stats-container{
+  display: flex;
+  flex-direction: column;
+}
+.post-stats{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.likes-comments{
+  display: flex;
+}
+.post-likes, .post-comments, .post-shares{
+  display: flex;
+  flex-direction: column;
+}
+.post-comments{
+  padding: 0px 15px;
+}
+.stat-icons{
+  height: 20px;
+  margin-bottom: -5px;
+}
+.stats-count{
+  color: gray;
+}
+.post-comments-box{
+  display: flex;
+  margin: 5px 0px 0px;
+}
+.post-input{
+  width: 85vw;
+  border-width: 0px;
+  color: rgba(0,0,0, 0.6);
+  background: rgba(200,200,200, 0.2);
+}
+.post-input:focus{
+  outline-color: #fc4f00;
+}
+.post-submit{
+  width: 15vw;
+  color: white;
+  background: #fc4f00;
+  border-width: 0px;
+}
+.post-submit:active{
+  color: #fc4f00;
+  background:white;
+  outline-color: #fc4f00;
+}
+
 img{
   height: 100px;
 }
