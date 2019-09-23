@@ -259,7 +259,7 @@ body {
   margin: 5px 0px 0px;
 }
 .post-input{
-  height: 50px;
+  height: 40px;
   width: 85vw;
   border-width: 0px;
   color: rgba(0,0,0, 0.6);
@@ -269,7 +269,7 @@ body {
   outline-color: #fc4f00;
 }
 .post-submit{
-  height: 50px;
+  height: 40px;
   width: 15vw;
   color: white;
   background: #fc4f00;
