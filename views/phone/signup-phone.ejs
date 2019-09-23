@@ -9,7 +9,7 @@
 <body id="signup-body">
   <%- include('partials/nav-phone.ejs', {data: "signup", status: 'active'}) %>
 
-  <form id="form-container" action="/signup" method="post">
+  <form id="form-container" action="/mobile/signup" method="post">
 
     <div class="social-signup social-login">
       <li id="social-fb" class="login-input-img social-fb-login"> <img src="/resources/images/social/facebook.png" alt="fb"> </li>
@@ -21,10 +21,9 @@
       <label for="name">الإسم</label>
       <input class="input-signup r-input" type="text" name="name" placeholder="رامي" required>
       <label for="taccount">نوع الحساب</label>
-      <!-- <input class="input-signup l-input" type="text" name="taccount" placeholder="طباخ" required> -->
       <select class="input-signup select-signup" name="taccount" form="form-container">
-        <option class="select-option-signup" value="volvo">طباخ</option>
-        <option class="select-option-signup" value="saab">مستخدم</option>
+        <option value="مستخدم" class="select-option-signup" >مستخدم</option>
+        <option value="طباخ" class="select-option-signup" >طباخ</option>
       </select>
       <label for="email">الإيميل</label>
       <input class="input-signup r-input" type="email" name="email" placeholder="ramy@food.com" autocomplete="email" required>

@@ -29,7 +29,7 @@ function signs(){
   })
   router.post('/login', (req,res)=>{
     console.log(req.body);
-    res.redirect('/wall-phone');
+    res.redirect('/mobile/wall');
   })
   //signup handlers
   router.get('/signup', (req,res)=>{
@@ -37,7 +37,7 @@ function signs(){
   })
   router.post('/signup', (req,res)=>{
     console.log(req.body);
-    res.redirect('/login-phone');
+    res.redirect('/mobile/login');
   })
 }
 
