@@ -152,21 +152,21 @@ body {
 }
 
 /******** (signup) *******/
+#signup-body{
+  height: 80vh;
+}
 #form-container{
   display: flex;
   flex-direction: column;
 }
 .social-signup{
-  margin: 20px 0px 0px;
+  margin: 10px 0px 0px;
 }
 .signup-info-container{
   margin-bottom: 40px;
 }
-.input-signup{
-
-}
 .select-signup{
-  /* padding-right: 80px; */
+  padding-right: 40%;
   background: white;
 }
 
