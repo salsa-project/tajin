@@ -73,9 +73,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.nav-item{
-  /* background-color: lightgray; */
-}
 .nav-item-image{
   height: 35px;
   filter: grayscale(1);
@@ -182,9 +179,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-.card:first-child{
+/* .card:first-child{
   margin: 0px 0px 10px;
-}
+} */
 .card{
   display: flex;
   flex-direction: column;
@@ -279,6 +276,81 @@ body {
   color: #fc4f00;
   background:white;
   outline-color: #fc4f00;
+}
+
+/******** (stores) *******/
+#body-stores{
+  background: #F8F8F8;
+  margin-bottom: 60px;
+}
+#store-search{
+  display: flex;
+  flex-direction: column;
+}
+.store-search-input{
+  width: 75vw;
+  margin: 5px auto;
+  border: 1px #fc4f00 solid;
+  border-radius: 3px;
+}
+#stores-wilaya{
+  padding-right: 40%;
+  background: white;
+}
+#store-card-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.store-card{
+  display: flex;
+  flex-direction: column;
+  width: 43vw;
+  margin: 10px 0px;
+  background: white;
+  border-radius: 3px;
+}
+.store-card-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px 5px;
+}
+.store-card-header-pic{
+  height: 20px;
+}
+.store-card-body{
+  display: flex;
+  flex-direction: column;
+}
+.store-picture{
+  height: 70px;
+  width: 70px;
+  margin: 0px auto;
+  border-radius: 50%;
+}
+.store-card-name{
+  font-size: 15pt;
+}
+.store-card-tags{
+  display : flex;
+  justify-content: space-around;
+  padding: 0px 8px;
+  margin: -5px 0px 0px;
+}
+.store-tag{
+  color: gray;
+}
+.store-card-rate{
+  display: flex;
+  justify-content: center;
+  padding: 3px 0px 6px;
+}
+.store-card-rate-text{
+  color: gray;
+}
+.store-star{
+  height: 15px;
+  margin: 8px 1px 0px;
 }
 
 img{

@@ -6,20 +6,69 @@
   <title>طاجين</title>
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="/resources/css/style-phone.css">
 </head>
-<body>
+<body id="body-stores">
   <%- include('partials/nav-phone.ejs', {data: "stores", status: 'active'}) %>
 
   <section id="store-container">
-    <div id="store-search">
-      <input class="store-search" type="text" name="search" placeholder="إبحث..">
-      <input class="store-search" type="text" name="recipeType" placeholder="نوع الوصفة">
-      <input class="store-search" type="text" name="mostValued" placeholder="الأكثر تقييما">
-    </div>
+    <form id="store-search" action="mobile/stores/search" method="GET">
+      <input class="store-search-input" type="text" name="search" placeholder="إبحث عن إسم المتجر ">
+      <input class="store-search-input" type="text" name="recipeType" placeholder="نوع الوصفة">
+      <select id="stores-wilaya" class="store-search-input" name="wilaya">
+        <option value="Adrar">1- أدرار</option>
+        <option value="Chlef">2- الشلف</option>
+        <option value="Laghouat">3- الأغواط</option>
+        <option value="Oum El Bouaghi">4- أم البواقي</option>
+        <option value="Batna">5- باتنة</option>
+        <option value="Béjaïa">6- بجاية</option>
+        <option value="Biskra">7- بسكرة</option>
+        <option value="Bechar">8- بشار</option>
+        <option value="Blida">9- البليدة</option>
+        <option value="Bouira">10- البويرة</option>
+        <option value="Tamanrasset">11- تمنراست</option>
+        <option value="Tbessa">12- تبسة</option>
+        <option value="Tlemcen">13- تلمسان</option>
+        <option value="Tiaret">14- تيارت</option>
+        <option value="Tizi Ouzou">15- تيزي وزو</option>
+        <option value="Alger">16- الجزائر</option>
+        <option value="Djelfa">17- الجلفة</option>
+        <option value="Jijel">18- جيجل</option>
+        <option value="Se9tif">19- سطيف</option>
+        <option value="Saefda">20- سعيدة</option>
+        <option value="Skikda">21- سكيكدة</option>
+        <option value="Sidi Bel Abbes">22- سيدي بلعباس</option>
+        <option value="Annaba">23- عنابة</option>
+        <option value="Guelma">24- قالمة</option>
+        <option value="Constantine">25- قسنطينة</option>
+        <option value="Medea">26- المدية</option>
+        <option value="Mostaganem">27- مستغانم</option>
+        <option value="M'Sila">28- المسيلة</option>
+        <option value="Mascara">29- معسكر</option>
+        <option value="Ouargla">30- ورقلة</option>
+        <option value="Oran">31- وهران</option>
+        <option value="El Bayadh">32- البيض</option>
+        <option value="Illizi">33- إليزي</option>
+        <option value="Bordj Bou Arreridj">34- برج بوعريريج</option>
+        <option value="Boumerdes">35- بومرداس</option>
+        <option value="El Tarf">36- الطارف</option>
+        <option value="Tindouf">37- تندوف</option>
+        <option value="Tissemsilt">38- تيسمسيلت</option>
+        <option value="El Oued">39- الوادي</option>
+        <option value="Khenchela">40- خنشلة</option>
+        <option value="Souk Ahras">41- سوق أهراس</option>
+        <option value="Tipaza">42- تيبازة</option>
+        <option value="Mila">43- ميلة</option>
+        <option value="Ain Defla">44- عين الدفلى</option>
+        <option value="Naama">45- النعامة</option>
+        <option value="Ain Temouchent">46- عين تموشنت</option>
+        <option value="Ghardaefa">47- غرداية</option>
+        <option value="Relizane">48- غليزان</option>
+      </select>
+    </form>
     <div id="store-card-container">
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/add.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/add.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -30,18 +79,18 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/followed.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/followed.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -52,18 +101,18 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/add.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/add.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -74,18 +123,18 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/followed.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/followed.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -96,18 +145,18 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/add.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/add.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -118,18 +167,18 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/add.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/add.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -140,18 +189,18 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/add.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/add.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -162,19 +211,19 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
 
       <div class="store-card">
         <div class="store-card-header">
-          <img class="store-card-header-pic" src="resources/images/msg.png" alt="message">
-          <img class="store-card-header-pic" src="resources/images/followed.png" alt="follow">
+          <img class="store-card-header-pic" src="/resources/images/msg.png" alt="message">
+          <img class="store-card-header-pic" src="/resources/images/followed.png" alt="follow">
         </div>
         <div class="store-card-body">
           <img class="store-picture" src="https://avatars3.githubusercontent.com/u/21?v=4" alt="store-pic">
@@ -185,11 +234,11 @@
           </div>
             <div class="store-card-rate">
               <p class="store-card-rate-text">التقييم :</p>
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/star.png" alt="star">
-              <img class="store-star" src="resources/images/unstar.png" alt="unstar">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/star.png" alt="star">
+              <img class="store-star" src="/resources/images/unstar.png" alt="unstar">
             </div>
         </div>
       </div>
