@@ -56,11 +56,12 @@ Version: 1
 body {
   background: #fcfcfc;
   direction: rtl;
+  margin-top: 50px;
 }
 /******** (navbar) *******/
 #navbar {
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   right: 0px;
   width: 100%;
   padding: 5px 0px 0px;
@@ -85,8 +86,6 @@ body {
 #form-container-login{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 40px 0px 0px;
 }
 .social-login{
   display: flex;
@@ -149,9 +148,6 @@ body {
 }
 
 /******** (signup) *******/
-#signup-body{
-  height: 80vh;
-}
 #form-container{
   display: flex;
   flex-direction: column;
@@ -159,14 +155,10 @@ body {
 .social-signup{
   margin: 10px 0px 0px;
 }
-.signup-info-container{
-  margin-bottom: 40px;
-}
 .select-signup{
   padding-right: 40%;
   background: white;
 }
-
 
 /******** (wall) *******/
 #body-wall{
@@ -179,9 +171,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* .card:first-child{
-  margin: 0px 0px 10px;
-} */
 .card{
   display: flex;
   flex-direction: column;
@@ -280,14 +269,13 @@ body {
 
 /******** (stores) *******/
 #body-stores{
-  background: #F8F8F8;
-  margin-bottom: 60px;
+  background: #f7f7f7;
 }
 #store-search{
   display: flex;
   flex-direction: column;
 }
-.store-search-input{
+.store-search-input, .store-search-button{
   width: 75vw;
   margin: 5px auto;
   border: 1px #fc4f00 solid;
@@ -295,6 +283,15 @@ body {
 }
 #stores-wilaya{
   padding-right: 25%;
+  background: white;
+}
+.store-search-button{
+  color: white;
+  background: #fc4f00;
+  font-size: 16pt;
+}
+.store-search-button:hover{
+  color: #fc4f00;
   background: white;
 }
 #store-card-container{
@@ -352,6 +349,8 @@ body {
   height: 15px;
   margin: 8px 1px 0px;
 }
+
+
 
 img{
   height: 100px;
