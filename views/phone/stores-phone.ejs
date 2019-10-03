@@ -10,7 +10,7 @@
   <%- include('partials/nav-phone.ejs', {data: "stores", status: 'active'}) %>
 
   <section id="store-container">
-    <form id="store-search" action="mobile/stores/search" method="GET">
+    <form id="store-search" action="/mobile/stores/search" method="GET">
       <input class="store-search-input" type="text" name="search" placeholder="إبحث عن إسم المتجر ">
       <input class="store-search-input" type="text" name="recipeType" placeholder="نوع الوصفة">
       <select id="stores-wilaya" class="store-search-input" name="wilaya">
